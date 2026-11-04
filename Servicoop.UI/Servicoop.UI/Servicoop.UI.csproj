@@ -194,6 +194,7 @@
     <Content Include="Recursos\Imagenes\CarruselInicio\CarrusleInicioDisdoni.jpg" />
     <Content Include="Recursos\Imagenes\Comunicados.jpg" />
     <Content Include="Recursos\Imagenes\Comunicados2.jpg" />
+    <Content Include="Recursos\Imagenes\Comunicados\Promocion_Pago_Marchamo_2027.jpg" />
     <Content Include="Recursos\Imagenes\Comunicados\ReglamentoCampanaCapitalizacionExcedentes.jpg" />
     <Content Include="Recursos\Imagenes\Convenios\Comercios\ConvenioComercioEcono.jpg" />
     <Content Include="Recursos\Imagenes\Convenios\Comercios\ConvenioComercioHotelAmakaLodge.jpg" />
@@ -301,6 +302,7 @@
     <Content Include="Recursos\PDF\INFORME_PROCESO_ELECTORAL_2025_Final.pdf" />
     <Content Include="Recursos\PDF\Boleta_Postulacion_2026.pdf" />
     <Content Include="Recursos\PDF\Comunicados\ReglamentoCampanaCapitalizacionExcedentes.pdf" />
+    <Content Include="Recursos\PDF\Comunicados\REGLAMENTO_Promocion_Pago_Marchamo_2027.pdf" />
     <None Include="Scripts\jquery-3.6.0.intellisense.js" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />

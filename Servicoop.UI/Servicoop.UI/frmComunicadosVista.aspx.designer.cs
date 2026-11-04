@@ -123,6 +123,15 @@ namespace Servicoop.UI
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl imgReglamentoCapitalizacionExcedente;
 
         /// <summary>
+        /// Control imgReglamentoPromocionMarchamo2027.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl imgReglamentoPromocionMarchamo2027;
+
+        /// <summary>
         /// Control pnImgComunicados.
         /// </summary>
         /// <remarks>
@@ -220,5 +229,14 @@ namespace Servicoop.UI
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl pngReglamentoCapitalizacionExcedente;
+
+        /// <summary>
+        /// Control pngReglamentoPromocionPagoMarchamo2027.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl pngReglamentoPromocionPagoMarchamo2027;
     }
 }
