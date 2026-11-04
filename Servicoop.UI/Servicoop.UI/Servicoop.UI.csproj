@@ -1,0 +1,664 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{255C61F6-1D96-40AC-BA53-C51E13952B74}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Servicoop.UI</RootNamespace>
+    <AssemblyName>Servicoop.UI</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44364</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=2.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=2.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.2.0.1\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="AspNet.ScriptManager.bootstrap">
+      <HintPath>..\packages\AspNet.ScriptManager.bootstrap.3.4.1\lib\net45\AspNet.ScriptManager.bootstrap.dll</HintPath>
+    </Reference>
+    <Reference Include="AspNet.ScriptManager.jQuery">
+      <HintPath>..\packages\AspNet.ScriptManager.jQuery.3.4.1\lib\net45\AspNet.ScriptManager.jQuery.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ScriptManager.MSAjax">
+      <HintPath>..\packages\Microsoft.AspNet.ScriptManager.MSAjax.5.0.0\lib\net45\Microsoft.ScriptManager.MSAjax.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ScriptManager.WebForms">
+      <HintPath>..\packages\Microsoft.AspNet.ScriptManager.WebForms.5.0.0\lib\net45\Microsoft.ScriptManager.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization, Version=1.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.6.0\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>..\packages\Antlr.3.5.0.2\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Web.Optimization.WebForms">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.WebForms.1.1.3\lib\net45\Microsoft.AspNet.Web.Optimization.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.FriendlyUrls">
+      <HintPath>..\packages\Microsoft.AspNet.FriendlyUrls.Core.1.0.2\lib\net45\Microsoft.AspNet.FriendlyUrls.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="About.aspx" />
+    <Content Include="Contact.aspx" />
+    <Content Include="Content\bootstrap-modif.css" />
+    <Content Include="Content\bootstrap-theme.css" />
+    <Content Include="Content\bootstrap-theme.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Site.css" />
+    <Content Include="Default.aspx" />
+    <Content Include="favicon.ico" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="frmAfiliacion.aspx" />
+    <Content Include="frmAgencias.aspx" />
+    <Content Include="frmBeneficiosSolidarios.aspx" />
+    <Content Include="frmBienesVenta.aspx" />
+    <Content Include="frmBolsaDeEmpleo.aspx" />
+    <Content Include="frmCalculadora.aspx" />
+    <Content Include="frmCompraVehiculo.aspx" />
+    <Content Include="frmCompraVivienda.aspx" />
+    <Content Include="frmComunicados.aspx" />
+    <Content Include="frmComunicadosVista.aspx" />
+    <Content Include="frmContactenos.aspx" />
+    <Content Include="frmContacto.aspx" />
+    <Content Include="frmConvenios.aspx" />
+    <Content Include="frmCreditoGarantiaHipotecaria.aspx" />
+    <Content Include="frmCreditoInmediato.aspx" />
+    <Content Include="frmCreditos.aspx" />
+    <Content Include="frmCreditoServifacil.aspx" />
+    <Content Include="frmCreditoServigastos.aspx" />
+    <Content Include="frmDisdoni.aspx" />
+    <Content Include="frmEstadodeCuenta.aspx" />
+    <Content Include="frmEstadosFinancierons.aspx" />
+    <Content Include="frmGestionesEnLinea.aspx" />
+    <Content Include="frmProductosCrediticios.aspx" />
+    <Content Include="frmQuienesSomos.aspx" />
+    <Content Include="frmRefundicionDeudas.aspx" />
+    <Content Include="frmSolicitudCredito.aspx" />
+    <Content Include="frmSugerencias.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\bootstrap.min.css.map" />
+    <Content Include="Content\bootstrap.css.map" />
+    <Content Include="Content\bootstrap-theme.min.css.map" />
+    <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="PoliticasCondiciones.aspx" />
+    <Content Include="Recursos\css\comunicados.css" />
+    <Content Include="Recursos\css\Convenios.css" />
+    <Content Include="Recursos\css\Creditos.css" />
+    <Content Include="Recursos\css\EstadosFinancieros.css" />
+    <Content Include="Recursos\css\General.css" />
+    <Content Include="Recursos\css\QuienesSomos.css" />
+    <Content Include="Recursos\Imagenes\Agencias\AgenciasLiberia.jpg" />
+    <Content Include="Recursos\Imagenes\Agencias\AgenciasPerezZeledon.jpg" />
+    <Content Include="Recursos\Imagenes\Agencias\AgenciasPuntarenas.jpg" />
+    <Content Include="Recursos\Imagenes\Agencias\AgenciasRioClaro.jpg" />
+    <Content Include="Recursos\Imagenes\Agencias\AgenciasSanJose.jpg" />
+    <Content Include="Recursos\Imagenes\Arte_Postulacion.jpg" />
+    <Content Include="Recursos\Imagenes\Banner\BannerAfiliaciones.jpg" />
+    <Content Include="Recursos\Imagenes\Banner\BannerBeneficioSolidarioBienestarSocial.jpg" />
+    <Content Include="Recursos\Imagenes\Banner\BannerBeneficioSolidarioFondoMutual.jpg" />
+    <Content Include="Recursos\Imagenes\Banner\BannerComunicados.jpg" />
+    <Content Include="Recursos\Imagenes\Banner\BannerComunicados2.jpg" />
+    <Content Include="Recursos\Imagenes\Banner\BannerContactenos.jpg" />
+    <Content Include="Recursos\Imagenes\Banner\BannerConveniosComerciales.jpg" />
+    <Content Include="Recursos\Imagenes\Banner\BannerCREDITOS.jpg" />
+    <Content Include="Recursos\Imagenes\Banner\BannerCreditosVivienda.jpg" />
+    <Content Include="Recursos\Imagenes\Banner\BannerDISDONI.jpg" />
+    <Content Include="Recursos\Imagenes\Banner\BannerEstadoDeCuenta.jpg" />
+    <Content Include="Recursos\Imagenes\Banner\BannerEstructuraOrganizacional.jpg" />
+    <Content Include="Recursos\Imagenes\Banner\BannerFormularioCreditos.jpg" />
+    <Content Include="Recursos\Imagenes\Banner\BannerGestionesEnLinea.jpg" />
+    <Content Include="Recursos\Imagenes\Banner\BannerQuienesSomos.jpg" />
+    <Content Include="Recursos\Imagenes\Banner\BannerRefundicionDeudas.jpg" />
+    <Content Include="Recursos\Imagenes\Banner\BannerServicoopConvenios.png" />
+    <Content Include="Recursos\Imagenes\Banner\BannerSugerencias.jpg" />
+    <Content Include="Recursos\Imagenes\car.svg" />
+    <Content Include="Recursos\Imagenes\CarruselInicio\BannerServicoopPagWeb-14.png" />
+    <Content Include="Recursos\Imagenes\CarruselInicio\BannerServicoopPagWeb-15.png" />
+    <Content Include="Recursos\Imagenes\CarruselInicio\CarruselAniversario.jpg" />
+    <Content Include="Recursos\Imagenes\CarruselInicio\CarruselInicioConvenios.jpg" />
+    <Content Include="Recursos\Imagenes\CarruselInicio\CarruselInicioCreditos.jpg" />
+    <Content Include="Recursos\Imagenes\CarruselInicio\CarruselInicioMarchamo.jpg" />
+    <Content Include="Recursos\Imagenes\CarruselInicio\CarruselInicioPolini.jpg" />
+    <Content Include="Recursos\Imagenes\CarruselInicio\CarruselInicioTarjeta.jpg" />
+    <Content Include="Recursos\Imagenes\CarruselInicio\CarruselProductosYServicios.jpg" />
+    <Content Include="Recursos\Imagenes\CarruselInicio\CarrusleInicioDisdoni.jpg" />
+    <Content Include="Recursos\Imagenes\Comunicados.jpg" />
+    <Content Include="Recursos\Imagenes\Comunicados2.jpg" />
+    <Content Include="Recursos\Imagenes\Comunicados\ReglamentoCampanaCapitalizacionExcedentes.jpg" />
+    <Content Include="Recursos\Imagenes\Convenios\Comercios\ConvenioComercioEcono.jpg" />
+    <Content Include="Recursos\Imagenes\Convenios\Comercios\ConvenioComercioHotelAmakaLodge.jpg" />
+    <Content Include="Recursos\Imagenes\Convenios\Comercios\ConvenioComercioHotelCasaRolandGolfito.jpg" />
+    <Content Include="Recursos\Imagenes\Convenios\Comercios\ConvenioComercioHotelCasaRolandSanJose.jpg" />
+    <Content Include="Recursos\Imagenes\Convenios\Comercios\ConvenioComercioHotelPuertoAzul.jpg" />
+    <Content Include="Recursos\Imagenes\Convenios\Comercios\ConvenioComercioHotelVillasLirioManuelAntonio.jpg" />
+    <Content Include="Recursos\Imagenes\Convenios\Comercios\ConvenioComercioIntelec.jpg" />
+    <Content Include="Recursos\Imagenes\Convenios\Educacion\ConvenioEducacionFundatec.jpg" />
+    <Content Include="Recursos\Imagenes\Convenios\Educacion\ConvenioEducacionInstitutoCosvic.jpg" />
+    <Content Include="Recursos\Imagenes\Convenios\Educacion\ConvenioEducacionInternationalChristianSchool.jpg" />
+    <Content Include="Recursos\Imagenes\Convenios\Educacion\ConvenioEducacionUniversidadCienciasYArte.jpg" />
+    <Content Include="Recursos\Imagenes\Convenios\Educacion\ConvenioEducacionUniversidadIndependiente.jpg" />
+    <Content Include="Recursos\Imagenes\Convenios\Educacion\ConvenioEducacionUniversidadLatina.jpg" />
+    <Content Include="Recursos\Imagenes\Convenios\Educacion\ConvenioEducacionUniversidadSantaLucia.jpg" />
+    <Content Include="Recursos\Imagenes\Convenios\Educacion\ConvenioEducacionUniversidadUnibe.jpg" />
+    <Content Include="Recursos\Imagenes\Convenios\Educacion\ConvenioEducacionUnversidadUlacit.jpg" />
+    <Content Include="Recursos\Imagenes\Convenios\Salud\ConvenioSaludAsembis.jpg" />
+    <Content Include="Recursos\Imagenes\Convenios\Salud\ConvenioSaludAsoDent.jpg" />
+    <Content Include="Recursos\Imagenes\Convenios\Salud\ConvenioSaludEcoSalud.jpg" />
+    <Content Include="Recursos\Imagenes\Convenios\Salud\ConvenioSaludFusadi.jpg" />
+    <Content Include="Recursos\Imagenes\Convenios\Salud\ConvenioSaludHospitalSanRafaelArcangel.jpg" />
+    <Content Include="Recursos\Imagenes\Convenios\Salud\ConvenioSaludHospitalUnibe.jpg" />
+    <Content Include="Recursos\Imagenes\Convenios\Salud\ConvenioSaludLaboratorioEchandi.jpg" />
+    <Content Include="Recursos\Imagenes\Convenios\Salud\ConvenioSaludOptiaImagenVisual.jpg" />
+    <Content Include="Recursos\Imagenes\Convenios\Salud\ConvenioSaludOpticaVision.jpg" />
+    <Content Include="Recursos\Imagenes\Convenios\Salud\ConvenioSaludPlazaMedicaEsparza.jpg" />
+    <Content Include="Recursos\Imagenes\cruz.png" />
+    <Content Include="Recursos\Imagenes\cruz.svg" />
+    <Content Include="Recursos\Imagenes\disculpa.png" />
+    <Content Include="Recursos\Imagenes\Disdoni.jpg" />
+    <Content Include="Recursos\Imagenes\DisdoniFooter.png" />
+    <Content Include="Recursos\Imagenes\Estatuto.jpg" />
+    <Content Include="Recursos\Imagenes\estructura.jpg" />
+    <Content Include="Recursos\Imagenes\Excedentes.jpg" />
+    <Content Include="Recursos\Imagenes\facebookFooter.svg" />
+    <Content Include="Recursos\Imagenes\facebook.svg" />
+    <Content Include="Recursos\Imagenes\fondoenlinea.jpg" />
+    <Content Include="Recursos\Imagenes\fondoMutual.jpg" />
+    <Content Include="Recursos\Imagenes\fotohome.jpg" />
+    <Content Include="Recursos\Imagenes\home.svg" />
+    <Content Include="Recursos\Imagenes\InformacionAsociados.jpg" />
+    <Content Include="Recursos\Imagenes\InscripcioinCandidatos3.png" />
+    <Content Include="Recursos\Imagenes\InscripcionCandidatos.jpg" />
+    <Content Include="Recursos\Imagenes\InscripcionCandidatos2.jpg" />
+    <Content Include="Recursos\Imagenes\instagramFooter.svg" />
+    <Content Include="Recursos\Imagenes\instagram.svg" />
+    <Content Include="Recursos\Imagenes\lacalculadora.jpg" />
+    <Content Include="Recursos\Imagenes\LINEA1-16.jpg" />
+    <Content Include="Recursos\Imagenes\LogoInicio.png" />
+    <Content Include="Recursos\Imagenes\LogoServicoop.png" />
+    <Content Include="Recursos\Imagenes\otrasatrascreditos.jpg" />
+    <Content Include="Recursos\Imagenes\Postulacion.jpeg" />
+    <Content Include="Recursos\Imagenes\Presasambleas2024.jpg" />
+    <Content Include="Recursos\Imagenes\Presasambleas2025.png" />
+    <Content Include="Recursos\Imagenes\ProcesoInscripcion2024.jpg" />
+    <Content Include="Recursos\Imagenes\ProcesoInscripcion2025.jpg" />
+    <Content Include="Recursos\Imagenes\Promocion_Pago_Marchamo_2026.jpg" />
+    <Content Include="Recursos\Imagenes\Reglamento_General_Proceso_Elecciones.jpeg" />
+    <Content Include="Recursos\Imagenes\SemanaSanta.jpg" />
+    <Content Include="Recursos\Imagenes\ServicoopSmall.png" />
+    <Content Include="Recursos\Imagenes\shutterstock_52273783.jpg" />
+    <Content Include="Recursos\Imagenes\user.svg" />
+    <Content Include="Recursos\Imagenes\whatsappFooter.svg" />
+    <Content Include="Recursos\Imagenes\whatsapp.svg" />
+    <Content Include="Recursos\Imagenes\youtubeFooter.svg" />
+    <Content Include="Recursos\Imagenes\youtube.svg" />
+    <Content Include="Recursos\js\Afiliacion.js" />
+    <Content Include="Recursos\js\Calculadora.js" />
+    <Content Include="Recursos\js\Comunicados.js" />
+    <Content Include="Recursos\js\ComunicadosVista.js" />
+    <Content Include="Recursos\js\Contactenos.js" />
+    <Content Include="Recursos\js\Convenios.js" />
+    <Content Include="Recursos\js\Creditos.js" />
+    <Content Include="Recursos\js\General.js" />
+    <Content Include="Recursos\js\QuienesSomos.js" />
+    <Content Include="Recursos\js\SolicitudCredito.js" />
+    <Content Include="Recursos\js\Sugerencias.js" />
+    <Content Include="Recursos\TemplateCorreo\Afiliacion.txt" />
+    <Content Include="Recursos\TemplateCorreo\Contactenos.txt" />
+    <Content Include="Recursos\TemplateCorreo\NotificacionUsuario.txt" />
+    <Content Include="Recursos\TemplateCorreo\SoliciteCredito.txt" />
+    <Content Include="Recursos\TemplateCorreo\Sugerencias.txt" />
+    <Content Include="Scripts\bootstrap.bundle.js" />
+    <Content Include="Scripts\bootstrap.bundle.min.js" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\bootstrap.js.map" />
+    <Content Include="Scripts\bootstrap.min.js.map" />
+    <Content Include="Scripts\jquery-3.4.1.min.map" />
+    <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
+    <Content Include="Scripts\bootstrap.bundle.js.map" />
+    <Content Include="Scripts\bootstrap.bundle.min.js.map" />
+    <Content Include="Disdoni.Master" />
+    <Content Include="Recursos\PDF\ANEXO-B-2024.docx.pdf" />
+    <Content Include="Recursos\PDF\ANEXO_A-2024.pdf" />
+    <Content Include="Recursos\PDF\REG-CE-004_Reglamento-Comite_Electoral.pdf" />
+    <Content Include="Recursos\PDF\ReglamentoCapitaliceExcedentes.pdf" />
+    <Content Include="Recursos\PDF\PoliticaPrivacidadServicoop.pdf" />
+    <Content Include="Recursos\PDF\BoletaElectoral2025.pdf" />
+    <Content Include="Recursos\PDF\Brochure_Comite_Electoral.pdf" />
+    <Content Include="Recursos\PDF\Reglamento_Promocion_Pago_Marchamo_2026.pdf" />
+    <Content Include="Recursos\PDF\Estatuto_Social_2025.pdf" />
+    <Content Include="Recursos\PDF\Reglamento_General_Proceso_Elecciones.pdf" />
+    <Content Include="Recursos\PDF\INFORME_PROCESO_ELECTORAL_2025_Final.pdf" />
+    <Content Include="Recursos\PDF\Boleta_Postulacion_2026.pdf" />
+    <Content Include="Recursos\PDF\Comunicados\ReglamentoCampanaCapitalizacionExcedentes.pdf" />
+    <None Include="Scripts\jquery-3.6.0.intellisense.js" />
+    <None Include="Scripts\jquery-3.4.1.intellisense.js" />
+    <Content Include="Scripts\jquery-3.4.1.js" />
+    <Content Include="Scripts\jquery-3.4.1.min.js" />
+    <Content Include="Scripts\jquery-3.4.1.slim.js" />
+    <Content Include="Scripts\jquery-3.4.1.slim.min.js" />
+    <Content Include="Scripts\jquery-3.6.0.js" />
+    <Content Include="Scripts\jquery-3.6.0.min.js" />
+    <Content Include="Scripts\jquery-3.6.0.slim.js" />
+    <Content Include="Scripts\jquery-3.6.0.slim.min.js" />
+    <Content Include="Scripts\jquery.number.min.js" />
+    <Content Include="Scripts\JQueryUI\AUTHORS.txt" />
+    <Content Include="Scripts\JQueryUI\external\jquery\jquery.js" />
+    <Content Include="Scripts\JQueryUI\images\ui-icons_444444_256x240.png" />
+    <Content Include="Scripts\JQueryUI\images\ui-icons_555555_256x240.png" />
+    <Content Include="Scripts\JQueryUI\images\ui-icons_777620_256x240.png" />
+    <Content Include="Scripts\JQueryUI\images\ui-icons_777777_256x240.png" />
+    <Content Include="Scripts\JQueryUI\images\ui-icons_cc0000_256x240.png" />
+    <Content Include="Scripts\JQueryUI\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="Scripts\JQueryUI\index.html" />
+    <Content Include="Scripts\JQueryUI\jquery-ui.css" />
+    <Content Include="Scripts\JQueryUI\jquery-ui.js" />
+    <Content Include="Scripts\JQueryUI\jquery-ui.min.css" />
+    <Content Include="Scripts\JQueryUI\jquery-ui.min.js" />
+    <Content Include="Scripts\JQueryUI\jquery-ui.structure.css" />
+    <Content Include="Scripts\JQueryUI\jquery-ui.structure.min.css" />
+    <Content Include="Scripts\JQueryUI\jquery-ui.theme.css" />
+    <Content Include="Scripts\JQueryUI\jquery-ui.theme.min.css" />
+    <Content Include="Scripts\JQueryUI\LICENSE.txt" />
+    <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="Scripts\sweetalert2.all.min.js" />
+    <Content Include="Scripts\WebForms\DetailsView.js" />
+    <Content Include="Scripts\WebForms\Focus.js" />
+    <Content Include="Scripts\WebForms\GridView.js" />
+    <Content Include="Scripts\WebForms\Menu.js" />
+    <Content Include="Scripts\WebForms\MenuStandards.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjax.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxApplicationServices.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxComponentModel.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxCore.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxGlobalization.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxHistory.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxNetwork.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxSerialization.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxTimer.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxWebForms.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxWebServices.js" />
+    <Content Include="Scripts\WebForms\SmartNav.js" />
+    <Content Include="Scripts\WebForms\TreeView.js" />
+    <Content Include="Scripts\WebForms\WebForms.js" />
+    <Content Include="Scripts\WebForms\WebParts.js" />
+    <Content Include="Scripts\WebForms\WebUIValidation.js" />
+    <Content Include="Site.Master" />
+    <Content Include="Web.config" />
+    <Content Include="Bundle.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Contact.aspx.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contact.aspx.designer.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Disdoni.Master.cs">
+      <DependentUpon>Disdoni.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Disdoni.Master.designer.cs">
+      <DependentUpon>Disdoni.Master</DependentUpon>
+    </Compile>
+    <Compile Include="frmAfiliacion.aspx.cs">
+      <DependentUpon>frmAfiliacion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmAfiliacion.aspx.designer.cs">
+      <DependentUpon>frmAfiliacion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmAgencias.aspx.cs">
+      <DependentUpon>frmAgencias.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmAgencias.aspx.designer.cs">
+      <DependentUpon>frmAgencias.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmBeneficiosSolidarios.aspx.cs">
+      <DependentUpon>frmBeneficiosSolidarios.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmBeneficiosSolidarios.aspx.designer.cs">
+      <DependentUpon>frmBeneficiosSolidarios.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmBienesVenta.aspx.cs">
+      <DependentUpon>frmBienesVenta.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmBienesVenta.aspx.designer.cs">
+      <DependentUpon>frmBienesVenta.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmBolsaDeEmpleo.aspx.cs">
+      <DependentUpon>frmBolsaDeEmpleo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmBolsaDeEmpleo.aspx.designer.cs">
+      <DependentUpon>frmBolsaDeEmpleo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmCalculadora.aspx.cs">
+      <DependentUpon>frmCalculadora.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmCalculadora.aspx.designer.cs">
+      <DependentUpon>frmCalculadora.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmCompraVehiculo.aspx.cs">
+      <DependentUpon>frmCompraVehiculo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmCompraVehiculo.aspx.designer.cs">
+      <DependentUpon>frmCompraVehiculo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmCompraVivienda.aspx.cs">
+      <DependentUpon>frmCompraVivienda.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmCompraVivienda.aspx.designer.cs">
+      <DependentUpon>frmCompraVivienda.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmComunicados.aspx.cs">
+      <DependentUpon>frmComunicados.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmComunicados.aspx.designer.cs">
+      <DependentUpon>frmComunicados.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmComunicadosVista.aspx.cs">
+      <DependentUpon>frmComunicadosVista.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmComunicadosVista.aspx.designer.cs">
+      <DependentUpon>frmComunicadosVista.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmContactenos.aspx.cs">
+      <DependentUpon>frmContactenos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmContactenos.aspx.designer.cs">
+      <DependentUpon>frmContactenos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmContacto.aspx.cs">
+      <DependentUpon>frmContacto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmContacto.aspx.designer.cs">
+      <DependentUpon>frmContacto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmConvenios.aspx.cs">
+      <DependentUpon>frmConvenios.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmConvenios.aspx.designer.cs">
+      <DependentUpon>frmConvenios.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmCreditoGarantiaHipotecaria.aspx.cs">
+      <DependentUpon>frmCreditoGarantiaHipotecaria.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmCreditoGarantiaHipotecaria.aspx.designer.cs">
+      <DependentUpon>frmCreditoGarantiaHipotecaria.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmCreditoInmediato.aspx.cs">
+      <DependentUpon>frmCreditoInmediato.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmCreditoInmediato.aspx.designer.cs">
+      <DependentUpon>frmCreditoInmediato.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmCreditos.aspx.cs">
+      <DependentUpon>frmCreditos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmCreditos.aspx.designer.cs">
+      <DependentUpon>frmCreditos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmCreditoServifacil.aspx.cs">
+      <DependentUpon>frmCreditoServifacil.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmCreditoServifacil.aspx.designer.cs">
+      <DependentUpon>frmCreditoServifacil.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmCreditoServigastos.aspx.cs">
+      <DependentUpon>frmCreditoServigastos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmCreditoServigastos.aspx.designer.cs">
+      <DependentUpon>frmCreditoServigastos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmDisdoni.aspx.cs">
+      <DependentUpon>frmDisdoni.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmDisdoni.aspx.designer.cs">
+      <DependentUpon>frmDisdoni.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmEstadodeCuenta.aspx.cs">
+      <DependentUpon>frmEstadodeCuenta.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmEstadodeCuenta.aspx.designer.cs">
+      <DependentUpon>frmEstadodeCuenta.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmEstadosFinancierons.aspx.cs">
+      <DependentUpon>frmEstadosFinancierons.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmEstadosFinancierons.aspx.designer.cs">
+      <DependentUpon>frmEstadosFinancierons.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmGestionesEnLinea.aspx.cs">
+      <DependentUpon>frmGestionesEnLinea.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmGestionesEnLinea.aspx.designer.cs">
+      <DependentUpon>frmGestionesEnLinea.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmProductosCrediticios.aspx.cs">
+      <DependentUpon>frmProductosCrediticios.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmProductosCrediticios.aspx.designer.cs">
+      <DependentUpon>frmProductosCrediticios.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmQuienesSomos.aspx.cs">
+      <DependentUpon>frmQuienesSomos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmQuienesSomos.aspx.designer.cs">
+      <DependentUpon>frmQuienesSomos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmRefundicionDeudas.aspx.cs">
+      <DependentUpon>frmRefundicionDeudas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmRefundicionDeudas.aspx.designer.cs">
+      <DependentUpon>frmRefundicionDeudas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmSolicitudCredito.aspx.cs">
+      <DependentUpon>frmSolicitudCredito.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmSolicitudCredito.aspx.designer.cs">
+      <DependentUpon>frmSolicitudCredito.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmSugerencias.aspx.cs">
+      <DependentUpon>frmSugerencias.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmSugerencias.aspx.designer.cs">
+      <DependentUpon>frmSugerencias.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="MyWebFormsFriendlyUrl.cs" />
+    <Compile Include="PoliticasCondiciones.aspx.cs">
+      <DependentUpon>PoliticasCondiciones.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PoliticasCondiciones.aspx.designer.cs">
+      <DependentUpon>PoliticasCondiciones.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <None Include="packages.config" />
+    <Content Include="Scripts\jquery-3.6.0.min.map" />
+    <Content Include="Scripts\jquery-3.6.0.slim.min.map" />
+    <Content Include="Scripts\JQueryUI\package.json" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Servicoop.Abstraccion\Servicoop.Abstraccion.csproj">
+      <Project>{58932A67-DC05-4F82-9243-C0583D316775}</Project>
+      <Name>Servicoop.Abstraccion</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Servicoop.EnviosCorreo\Servicoop.EnviosCorreo.csproj">
+      <Project>{2afe1a4f-69eb-439a-962c-f9e3ca4fe701}</Project>
+      <Name>Servicoop.EnviosCorreo</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>favicon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>65355</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44364/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Este proyecto hace referencia a los paquetes NuGet que faltan en este equipo. Use la restauración de paquetes NuGet para descargarlos. Para obtener más información, consulte http://go.microsoft.com/fwlink/?LinkID=322105. El archivo que falta es {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

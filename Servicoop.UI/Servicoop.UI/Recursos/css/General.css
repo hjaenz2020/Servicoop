@@ -1,0 +1,296 @@
+﻿:root {
+    --var-font-family-poppins: 'Poppins', sans-serif;
+    --var-font-family-timeNewRoman: 'Times New Roman', Times, serif;
+    --var-font-family-Arial: Arial, Helvetica, sans-serif;
+    --var-font-famili-Montserrat: 'Montserrat';
+    --var-color-Principal-Azul: #062863 !important;
+    --var-color-Principal-Amarillo: #E07C00 !important;
+    --var-color-Principal-Verde-Disdoni: rgb(4,69,71) !important;
+}
+
+body {
+    width: 100% !important;
+    position: relative;
+    text-align: justify;
+    text-justify: inter-word;
+    word-spacing: -2px;
+    font-family: var(--var-font-famili-Montserrat) !important;
+}
+
+.textoJustificado {
+    text-align: justify;
+    text-justify: inter-word;
+    font-family: var(--var-font-famili-Montserrat) !important;
+}
+
+.NavPrincipal{
+   background-color: #fff !important;
+}
+.NavColor {
+    color: var(--var-color-Principal-Azul) !important;
+    font-weight: bold !important;
+    word-wrap: normal;
+    white-space: nowrap;
+}
+
+    .NavColor:hover {
+        color: var(--var-color-Principal-Amarillo) !important;
+    }
+
+.SinSombra:focus {
+    box-shadow: none !important;
+}
+
+.input-text {    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+    padding: 0 20px;
+    max-width: 100%;
+    height: 35px;
+    width: 100%;
+    border:1px solid black;
+    border-radius: 10px;
+    padding: 0 20px;
+}
+
+.requisitoObligatorio{
+    color: red;
+}
+
+.imgRedesSociales {
+    width: 2em;
+    height: 100%;
+    margin: 0px 2px 0px 2px; 
+}
+
+.pie-pagina {
+    background-color: var(--var-color-Principal-Azul);
+    color: #fff !important;
+}
+
+.pie-pagina li {
+    display: block;
+    list-style: none;
+}
+
+.pie-pagina li a{
+    color: #fff !important;
+    text-decoration: none;
+}
+
+.pie-paginaDisdoni {
+    background-color: var(--var-color-Principal-Verde-Disdoni);
+    color: #fff !important;
+}
+
+.pie-paginaDisdoni li {
+    display: block;
+    list-style: none;
+}
+
+    .pie-paginaDisdoni li a {
+        color: #fff !important;
+        text-decoration: none;
+    }
+
+
+.creditoInmediato {
+    display: inline-block;
+    width: 13em !important;
+    height: 20px;
+    margin: 5px 0px 5px 0px;
+    padding: 0px 2px 8px 50px;
+    background-position: 20px 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    text-align: left;
+    text-decoration: none;
+    font-family: var(--var-font-famili-Montserrat) !important;
+    font-size: 15px;
+    color: black;
+}
+
+.Vivienda {
+    background-image: url('../imagenes/home.svg');
+}
+
+.car {
+    background-image: url('../imagenes/car.svg');
+}
+
+.titulo1 {
+    font-family: var(--var-font-famili-Montserrat) !important;
+}
+
+.subtitulo{
+    font-family:Arial;
+}
+
+.Cssfooter {
+    margin-top: 25px;
+    background-color: var(--var-color-Principal-Amarillo) !important;
+    color: #fff !important;
+}
+
+.CssfooterDisdoni{
+
+}
+
+.CssfooterCopy {
+    color: #fff !important;
+    font-weight: bold;
+}
+
+.CssFooterBlanco{
+    height: 5px;
+    background-color: #fff !important;
+}
+
+.TituloEnunciados{
+    text-align:start;
+    color: var(--var-color-Principal-Azul) !important;
+    font-family: var(--var-font-famili-Montserrat) !important;
+    font-weight: bold;
+}
+
+
+
+.banners{
+    width: 100%;
+    height: auto;
+}
+
+.ParrafoQuienesSomos {
+    margin-bottom: 0px !important;
+}
+
+.ULQuienesSomos {
+    padding-top: 0.5rem;
+    padding-left: 40px !important;
+}
+
+.carruselInicioSegundario1 {
+    height: 700px;
+    max-width: 100%;
+    background-image: url('../imagenes/carruselinicio/carruseliniciocreditos.jpg');
+    background-size: cover;
+}
+
+.carruselInicioSegundario2 {
+    height: 700px;
+    max-width: 100%;
+    background-image: url('../imagenes/carruselinicio/carruselinicioconvenios.jpg');
+    background-size: cover;
+}
+
+.carruselInicioSegundario3 {
+    height: 700px;
+    max-width: 100%;
+    background-image: url('../imagenes/carruselinicio/carruseliniciomarchamo.jpg');
+    background-size: cover;
+}
+
+.carruselInicioSegundario4 {
+    height: 700px;
+    max-width: 100%;
+    background-image: url('../imagenes/carruselinicio/carruseliniciopolini.jpg');
+    background-size: cover;
+}
+
+.carruselInicioSegundario5 {
+    height: 700px;
+    max-width: 100%;
+    background-image: url('../imagenes/carruselinicio/carruseliniciotarjeta.jpg');
+    background-size: cover;
+}
+
+.carruselInicioSegundario6 {
+    height: 700px;
+    max-width: 100%;
+    background-image: url('../imagenes/carruselinicio/carrusleiniciodisdoni.jpg');
+    background-size: cover;
+}
+
+.buttonCarrusel {
+    background-color: var(--var-color-Principal-Amarillo) !important;
+    color: #fff !important;
+    border-color: var(--var-color-Principal-Amarillo) !important;
+}
+
+    .buttonCarrusel:hover {
+        border-color: var(--var-color-Principal-Amarillo) !important;
+    }
+
+
+.CarruselInicioSecundario{
+    height: auto;
+    bottom: 25px;
+    position: absolute !important;
+}
+
+    .CarruselInicioSecundario .carousel-caption {
+        position: unset !important;
+    }
+
+    .TituloEnunciadoCarrusel {
+        word-wrap: normal;
+        white-space: nowrap;
+    }
+
+.textoFooter{
+    font-size:1rem !important;
+}
+
+.slide {
+    height : 100%;
+}
+
+.slide img{
+    height: 100%;
+}
+
+@media only screen and (max-width : 600px) {
+    
+    .textoFooter {
+        align-items: center;
+        text-align: center;
+        font-size: 0.68rem !important;
+    }
+
+    .CarruselSegundo {
+        display: none !important;
+    }
+
+    .carousel-caption{
+        padding-bottom: 0px;
+    }
+        .carousel-caption h2 {
+            font-size: calc(1rem + 0.5vw);
+            margin-bottom: 0.2rem !important;
+        }
+
+    .buttonCarruselSegunario {
+        font-size: 0.7rem !important;
+    }
+}
+
+@media only screen and (max-width : 400px) {
+    .CarruselSegundo {
+        display: none !important;
+    }
+
+    .carousel-caption {
+        padding-bottom: 0px;
+    }
+
+        .carousel-caption h2 {
+            font-size: calc(0.8rem + 0.7vw);
+            margin-bottom: 0.2rem !important;
+        }
+
+    .buttonCarruselSegunario {
+        font-size: 0.6rem !important;
+    }
+}

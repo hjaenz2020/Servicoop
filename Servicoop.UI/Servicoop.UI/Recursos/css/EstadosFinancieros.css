@@ -1,0 +1,23 @@
+﻿body {
+}
+
+.sombra {
+    background-color: #19458E !important;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    color: #f09102;
+}
+
+    .sombra i {
+         
+        font-size: 35px;
+    }
+
+    .sombra:hover {
+        box-shadow: 5px 5px #fff,-5px 5px #fff, 5px -5px #fff, -5px -5px #fff, 6px 6px #f09102,-6px 6px #f09102, 6px -6px #f09102, -6px -6px #f09102;
+        background-color: #f09102 !important;
+        color: #fff !important;
+    }
+
+

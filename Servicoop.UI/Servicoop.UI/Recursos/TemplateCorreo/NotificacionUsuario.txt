@@ -1,0 +1,44 @@
+<html><head>
+<style>
+.Notificacion{
+	max-width : 50vw;
+	margin-right: auto;
+	margin-left: auto;
+	justify-content: center;
+	
+	box-shadow: 0 4px 8px rgba(0,0,0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.center{display:block;margin-left:auto;margin-right:auto;width:10%;border-radius:5%;}
+.recomendaciones{width:60%;padding: 10px;}
+.recomendaciones span{color:red;font-weight:bold;}
+.recomendaciones .login{width:40%;height:50%}
+.app1{width: 30%;height: 10%;}
+.app2{width: 30%;height: 10%;}
+h1{text-align:center; color:#19458E;}
+img {
+max-width : 75vw;	
+	width: 100%;
+	
+}
+
+</style>
+</head>
+<body>
+
+<div class="Notificacion">
+        
+<h1>Notificación  a Servicoop</h1>
+<br>
+<p class="recomendaciones">Estimado/a</p>
+<p class="recomendaciones">Ha recibido esta notificación por parte del sistema web de SERVICOOP.</p>
+
+<div class="recomendaciones">
+<p>Su $formulario$ ha sido enviado con éxito</p>
+</div> 
+
+</div>
+
+
+        
+
+</body></html>

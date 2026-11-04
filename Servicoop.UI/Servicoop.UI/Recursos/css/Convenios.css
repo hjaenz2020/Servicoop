@@ -1,0 +1,18 @@
+﻿body {
+}
+
+.SeleccionConvenio{
+    justify-content : center
+}
+
+.SeleccionRadios{
+    max-width : 160px !important;
+    width: 100% !important; 
+}
+
+@media only screen and (max-width: 700px)
+{
+    .SeleccionConvenio{
+        justify-content : start !important;
+    }
+}

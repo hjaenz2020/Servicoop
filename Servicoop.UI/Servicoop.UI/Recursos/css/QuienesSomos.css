@@ -1,0 +1,47 @@
+﻿.ButtonBlue {
+    background-color: #213085 !important;
+    border-radius: 0px;
+}
+
+.ButtonGris {
+    background-color: rgba(0,0,0,0.045);
+    color: #888;
+    border-radius: 0px;
+    border: none;
+}
+
+.ParrafoQuienesSomos{
+    
+    margin-bottom : 0px !important;
+}
+
+    .ULQuienesSomos {
+        padding-top: 0.5rem;
+        padding-left: 40px;
+    }
+
+.ArrowComites {
+    color: var(--var-color-Principal-Azul) !important;
+}
+
+.active{
+    transform: rotate(-180deg);
+    -webkit-transform: rotate(-180deg);
+}
+
+td{
+    width: 200px;
+    padding: 0px 0px 0px 0.5rem !important;
+}
+
+.cruz{
+    height:30px;
+}
+
+.Consejos{
+    width : auto !important;
+}
+td {
+    word-wrap: normal;
+    white-space: nowrap;
+}

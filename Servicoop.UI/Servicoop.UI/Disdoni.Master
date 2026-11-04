@@ -1,0 +1,173 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Disdoni.master.cs" Inherits="Servicoop.UI.Disdoni" %>
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Servicoop RL - Costa Rica</title>
+
+
+
+    <webopt:BundleReference runat="server" Path="~/Content/css" />
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,600&display=swap" rel="stylesheet">
+
+
+
+    <link href="Recursos/css/General.css" rel="stylesheet" />
+
+    <link href="Content/bootstrap.min.css" rel="stylesheet">
+
+
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+</head>
+<body>
+    <form runat="server">
+        <div class="fixed-top w-100" style="top: 0px;">
+            <nav class="navbar navbar-expand-lg navbar-light NavPrincipal fixed-top w-100" style="margin-top: 0px;">
+                <div class="container-fluid">
+                    <button type="button" id="btnLogin" style="position: relative; height: 70px; border: none; background-color: rgba(248,249,250,-1) ! important" onclick="location.href='/Default.aspx'">
+                        <img clas="img-fluid" src="Recursos/Imagenes/LogoServicoop.png" style="height: 100%;" />
+                    </button>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".collapse.navbar-collapse" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-center" id="navbarsNavDropdown">
+
+                        <ul class="navbar-nav mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link NavColor" href="/Default.aspx">Inicio</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle NavColor" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Créditos</a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a href="/frmProductosCrediticios.aspx" class="dropdown-item">Crédito de Consumo</a></li>
+                                    <li><a href="/frmCreditoGarantiaHipotecaria.aspx" class="dropdown-item">Crédito con Garantía Hipotecaria</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link NavColor" href="/frmBeneficiosSolidarios.aspx">Beneficios Solidarios</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link NavColor" href="/frmConvenios.aspx">Convenios</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link NavColor" href="/frmGestionesEnLinea.aspx">Gestiones en Línea</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="/frmQuienesSomos.aspx" class="nav-link NavColor">Quienes Somos</a>
+
+                            </li>
+                            <li class="nav-item">
+                                <a href="/frmDisdoni.aspx" class="nav-link NavColor">Disdoni</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/frmComunicados.aspx" class="nav-link NavColor">Comunicados</a>
+                            </li>
+
+
+                            <li class="nav-item" style="width: 200px !important;">
+                                <div class="col-12 d-flex">
+                                    <div class="col-lg-2 col-sm-5">
+                                        <a href="https://wa.me/message/4VG5XQBDDTWYH1" target="_blank" rel="noopener noreferrer">
+                                    <img class="imgRedesSociales" src="Recursos/Imagenes/whatsapp.svg" /></a>
+                                    </div>
+                                    <div class="col-lg-2 col-sm-5">
+                                        <a href="https://www.facebook.com/ServicoopCR" target="_blank" rel="noopener noreferrer">
+                                    <img class="imgRedesSociales" src="Recursos/Imagenes/facebook.svg" /></a>
+                                    </div>
+                                    <div class="col-lg-2 col-sm-5">
+                                        <a href="https://www.instagram.com/servicooprl/" target="_blank" rel="noopener noreferrer">
+                                    <img class="imgRedesSociales" src="Recursos/Imagenes/instagram.svg" /></a>
+                                    </div>
+                                    <div class="col-lg-2 col-sm-5">
+                                        <a href="http://youtube.com/@servicoopr.l.9256" target="_blank" rel="noopener noreferrer">
+                                    <img class="imgRedesSociales" src="Recursos/Imagenes/youtube.svg" /></a>
+                                    </div>
+                                </div>                                
+                            </li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <%--  --%>
+        <div style="margin-top: 100px !important;">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            </asp:ContentPlaceHolder>
+
+            <footer class="bottom-0 Cssfooter">
+                <div class="pie-paginaDisdoni">
+                    <div class="container body-content py-3">
+                        <div class="row d-flex justify-content-lg-between">
+                            <div class="col-sm-3 py-3">
+                                <img class="img-fluid" src="Recursos/Imagenes/DisdoniFooter.png" />
+                            </div>
+                            <div class="col-sm-3 py-3 px-3">
+                                <div class="col-sm-12">
+                                    <a href="/frmContacto.aspx" style="text-decoration-line: none; color: #fff !important">Contáctenos</a>
+                                </div>
+                                <div class="col-sm-12">
+                                    <label>info@servicomercialcr.com</label>
+                                </div>
+                                <div class="col-sm-12">
+                                    <label>Tel: +506 4010-2700</label>
+                                </div>
+                                <div class="col-sm-12">
+                                    <label>Síguenos en:</label>
+                                </div>
+                                <div class="row d-flex">
+                                    <div class="row d-flex">
+                                        <div class="col-lg-2 col-sm-5">
+                                            <a href="https://wa.me/message/4VG5XQBDDTWYH1" target="_blank" rel="noopener noreferrer">
+                                                <img class="imgRedesSociales" src="Recursos/Imagenes/whatsappFooter.svg" /></a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <%--</div>--%>
+                </div>
+                <div class="CssFooterBlanco">
+                </div>
+                <div class="d-flex justify-content-center CssfooterCopy">
+                    <p class="py-2 textoFooter" style="margin-bottom: 0; font-weight:normal">Copyright 2024 &copy; Servicoop R.L. | Todos los Derechos Reservados</p>
+                </div>
+            </footer>
+        </div>
+
+    </form>
+
+    <script src="<%=ResolveUrl("Scripts/bootstrap.js") %>"></script>
+    <script src="<%=ResolveUrl("Scripts/jquery-3.6.0.min.js")%>"></script>
+    <script src="<%=ResolveUrl("Scripts/jquery-3.6.0.js")%>"></script>
+    <script src="<%=ResolveUrl("Scripts/jquery.number.min.js")%>"></script>
+    <script src="<%=ResolveUrl("Scripts/JQueryUI/jquery-ui.js")%>"></script>
+    <script src="<%=ResolveUrl("Scripts/bootstrap.min.js")%>"></script>
+    <script src="<%=ResolveUrl("Scripts/JQueryUI/external/jquery/jquery.js")%>"></script>
+    <script src="<%=ResolveUrl("Recursos/js/General.js") %>"></script>
+    <script src="<%=ResolveUrl("Scripts/sweetalert2.all.min.js") %>"></script>
+    <script src="Scripts/bootstrap.bundle.js"></script>
+
+    <script type="text/javascript">
+        var baseUrl = "<%=Request.Url.GetLeftPart(UriPartial.Authority) + Request.ApplicationPath%>";
+        SetURLRoot(baseUrl);
+    </script>
+</body>
+</html>

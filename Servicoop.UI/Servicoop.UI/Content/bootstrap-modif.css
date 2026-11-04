@@ -1,0 +1,103 @@
+﻿@font-face {
+    font-family: 'Quicksand';
+    src: url('../Fonts/Quicksand-Regular.ttf');
+}
+
+body {
+    font-family: Quicksand !important;
+}
+
+.fondoLogin {
+    background: rgb(27,70,108);
+    background: -moz-linear-gradient(165deg, rgba(27,70,108,1) 0%, rgba(38,146,182,1) 100%);
+    background: -webkit-linear-gradient(165deg, rgba(27,70,108,1) 0%, rgba(38,146,182,1) 100%);
+    background: linear-gradient(165deg, rgba(27,70,108,1) 0%, rgba(38,146,182,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#1b466c",endColorstr="#2692b6",GradientType=1);
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.bannerINS {
+    background: rgb(27,70,108);
+    background: -moz-linear-gradient(90deg, rgba(27,70,108,1) 0%, rgba(38,146,182,1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(27,70,108,1) 0%, rgba(38,146,182,1) 100%);
+    background: linear-gradient(90deg, rgba(27,70,108,1) 0%, rgba(38,146,182,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#1b466c",endColorstr="#2692b6",GradientType=1);
+    height: 125px;
+    margin-top: -16px !important;
+    padding: 15px;
+}
+
+.bannerRespuestaSol {
+    background: rgb(27,70,108);
+    background: -moz-linear-gradient(90deg, rgba(27,70,108,1) 0%, rgba(38,146,182,1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(27,70,108,1) 0%, rgba(38,146,182,1) 100%);
+    background: linear-gradient(90deg, rgba(27,70,108,1) 0%, rgba(38,146,182,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#1b466c",endColorstr="#2692b6",GradientType=1);
+    height: 150px;
+    margin-top: -8px !important;
+    padding: 15px;   
+}
+
+
+.bg-dark {
+    --bs-bg-opacity: 1;
+    --bs-dark-rgb: 28, 71, 108;
+    border-radius: 0px !important;
+    border-bottom: 1px solid rgba(255,255,255,.5) !important;
+}
+
+.bg-secondary {
+    --bs-bg-opacity: 1;
+    --bs-secondary-rgb: 22, 59, 81;
+    border-radius: 0px !important;
+    border-bottom: 1px solid rgba(255,255,255,.5) !important;
+}
+
+.btn-primary {
+    background-color: #2FB6D4 !important;
+    border-color: #2FB6D4 !important;
+}
+
+.btn-success {
+    background-color: #37ba2b !important;
+    border-color: #37ba2b !important;
+}
+
+.btn-outline-success {
+    border-color: #37ba2b !important;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.btn-outline-danger {
+    border-color: #CF2525 !important;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.table-success {
+    --bs-table-bg: #1D859C !important;
+    --bs-table-hover-bg: #1D859C !important;
+    color: #fff !important;
+    border-color: #92D3E2 !important;
+}
+
+#result {
+    border: 1px dotted #ccc;
+    padding: 3px;
+}
+
+#result ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#result ul li {
+    padding: 5px 0;
+}
+
+#result ul li:hover {
+    background: #eee;
+}

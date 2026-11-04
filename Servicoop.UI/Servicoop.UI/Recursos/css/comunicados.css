@@ -1,0 +1,51 @@
+﻿body {
+}
+
+.card:hover {
+    -webkit-transform:scale(1.10);
+    -moz-transform: scale(1.10);
+    -ms-transform: scale(1.10);
+    -o-transform: scale(1.10);
+    transform:scale(1.10);
+}
+
+
+
+/*.carouselExampleControls{
+    padding: 5%;
+}
+
+
+#carouselExampleControls {
+    margin-top: 50px;
+}*/
+
+/*@media (max-width: 768px) {
+    .carousel-inner .carousel-item > div {
+        display: none;
+    }
+
+        .carousel-inner .carousel-item > div:first-child {
+            display: block;
+        }
+}*/
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-start,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+    display: flex;
+
+}
+
+
+.card {
+    word-wrap: normal;
+    white-space: nowrap;
+    overflow-x: hidden;   
+}
+
+.card-body{
+    width : 320px !important;
+}
+

@@ -1,0 +1,46 @@
+﻿body {
+}
+
+.SinSombra {
+    background-color: #f09102 !important; 
+    border: none;
+}
+
+.ButtonBlue {
+    background-color: #213085 !important;
+    border:none;
+    border-radius: 0px;
+}
+
+.ButtonGris {
+    background-color: rgba(0,0,0,0.045);
+    color: #888;
+    border-radius: 0px;
+    border: none;
+}
+
+.ButtonBlue:focus{
+    box-shadow: none !important;
+}
+
+.ButtonGris:focus{
+    box-shadow: none !important;
+}
+
+h1, h2, h3, h4, h5 {
+    color: #213085;
+}
+
+.imgPortada {
+    height: 400px;
+    background-image: url('../imagenes/estructura.jpg');
+    background-size: cover;
+}
+
+    .imgPortada h3 {
+        color: #fff !important;
+    }
+
+    .imgPortada p {
+        color: #fff !important;
+    }
