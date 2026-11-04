@@ -48,6 +48,9 @@
                 <div class="col-sm-6" id="imgReglamentoCapitalizacionExcedente" runat="server" style="display: none;">
                     <img class="img-fluid" src="Recursos/Imagenes/Comunicados/ReglamentoCampanaCapitalizacionExcedentes.jpg" />
                 </div>
+                <div class="col-sm-6" id="imgReglamentoPromocionMarchamo2027" runat="server" style="display: none;">
+                    <img class="img-fluid" src="Recursos/Imagenes/Comunicados/Promocion_Pago_Marchamo_2027.jpg" />
+                </div>
                 <div class="col-sm-6">
                     <div class="col-12 mt-2">
                         Descargue los archivos adjuntos.
@@ -93,6 +96,10 @@
                         <a class="mt-2" href="Recursos/Imagenes/Comunicados/ReglamentoCampanaCapitalizacionExcedentes.jpg" style="color: #213085; text-decoration: none;" download>Descargue la imagen</a>
                         <a class="mt-2" href="Recursos/PDF/Comunicados/ReglamentoCampanaCapitalizacionExcedentes.pdf" style="color: #213085; text-decoration: none;" download>Descargue el Reglamento Campaña Capitalización de Excedentes 2025</a>
                     </div>
+                    <div class="row" id="pngReglamentoPromocionPagoMarchamo2027" runat="server" style="display: none">
+    <a class="mt-2" href="Recursos/Imagenes/Comunicados/Promocion_Pago_Marchamo_2027.jpg" style="color: #213085; text-decoration: none;" download>Descargue la imagen</a>
+    <a class="mt-2" href="Recursos/PDF/Comunicados/Reglamento_Promocion_Pago_Marchamo_2027.pdf" style="color: #213085; text-decoration: none;" download>Descargue el Reglamento Promoción Pago de Marchamo 2027</a>
+</div>
                 </div>
             </div>
 

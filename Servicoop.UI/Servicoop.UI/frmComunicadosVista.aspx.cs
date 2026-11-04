@@ -73,6 +73,11 @@ namespace Servicoop.UI
                     imgReglamentoCapitalizacionExcedente.Style.Add("display", "block");
                     pngReglamentoCapitalizacionExcedente.Style.Add("display", "inblock");
                     break;
+                case "12":
+                    TituloComunicadosVista.InnerText = "REGLAMENTO PROMOCION PAGO DE MARCHAMO 2027";
+                    imgReglamentoPromocionMarchamo2027.Style.Add("display", "block");
+                    pngReglamentoPromocionPagoMarchamo2027.Style.Add("display", "inblock");
+                    break;
                 default:
                     break;
             }
