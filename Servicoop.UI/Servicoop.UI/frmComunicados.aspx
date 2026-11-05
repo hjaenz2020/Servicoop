@@ -163,36 +163,6 @@
                         </div>
                     </div>
                 </div>
-
-
-
-
-
-                <div class="swiper-slide h-100">
-                    <div class="card shadow mx-auto">
-                        <div class="card-body w-100">
-                            <div class="lc-block w-100">
-                                <img class="img-fluid w-100" src="Recursos/Imagenes/Comunicados2.jpg">
-                            </div>
-                            <div class="card-body" style="padding: 0.3rem !important;">
-                                <div class="lc-block mb-3">
-                                    <div editable="rich">
-
-                                        <h6 class="my-1">23 de octubre de 2025</h6>
-                                        <h6 class="card-title text-break text-wrap"><strong>Reglamento Promoción Pago de Marchamo 2026</strong></h6>
-                                    </div>
-                                </div>
-                                <div class="lc-block col-4">
-                                    <a href="/frmComunicadosVista.aspx?Id=8" class="btn btn-primary w-100 buttonCarrusel">Ver +</a>
-                                </div>
-
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
                 
 
                 <div class="swiper-slide h-100">

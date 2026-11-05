@@ -87,15 +87,6 @@ namespace Servicoop.UI
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl imgCandidatos;
 
         /// <summary>
-        /// Control imgExcedentes.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl imgExcedentes;
-
-        /// <summary>
         /// Control imgEstatutoSocial.
         /// </summary>
         /// <remarks>
@@ -193,15 +184,6 @@ namespace Servicoop.UI
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl pnImgCandidatos;
-
-        /// <summary>
-        /// Control pnImgReglamentoCapitalice.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl pnImgReglamentoCapitalice;
 
         /// <summary>
         /// Control pnEstatutoSocial.
