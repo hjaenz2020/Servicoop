@@ -35,10 +35,7 @@
                 </div>
                 <div class="col-sm-6" id="imgCandidatos" runat="server" style="display: none;">
                     <img class="img-fluid" src="Recursos/Imagenes/Candidatos.jpg" />
-                </div>
-                <div class="col-sm-6" id="imgExcedentes" runat="server" style="display: none;">
-                    <img class="img-fluid" src="Recursos/Imagenes/Promocion_Pago_Marchamo_2026.jpg" />
-                </div>
+                </div>                
                 <div class="col-sm-6" id="imgEstatutoSocial" runat="server" style="display: none;">
                     <img class="img-fluid" src="Recursos/Imagenes/Estatuto.jpg" />
                 </div>
@@ -79,11 +76,7 @@
                     </div>
                     <div class="row" id="pnImgCandidatos" runat="server" style="display: none">
                         <a class="mt-2" href="Recursos/Imagenes/Candidatos.jpg" style="color: #213085; text-decoration: none;" download>Descargue la imagen</a>
-                    </div>
-                    <div class="row" id="pnImgReglamentoCapitalice" runat="server" style="display: none">
-                        <a class="mt-2" href="Recursos/Imagenes/Promocion_Pago_Marchamo_2026.jpg" style="color: #213085; text-decoration: none;" download>Descargue la imagen</a>
-                        <a class="mt-2" href="Recursos/PDF/Reglamento_Promocion_Pago_Marchamo_2026.pdf" style="color: #213085; text-decoration: none;" download>Descargue el Reglamento Marchamo 2026</a>
-                    </div>
+                    </div>                    
                     <div class="row" id="pnEstatutoSocial" runat="server" style="display: none">
                         <a class="mt-2" href="Recursos/Imagenes/Estatuto.jpg" style="color: #213085; text-decoration: none;" download>Descargue la imagen</a>
                         <a class="mt-2" href="Recursos/PDF/Estatuto_Social_2025.pdf" style="color: #213085; text-decoration: none;" download>Descargue el Estatuto Social 2025</a>

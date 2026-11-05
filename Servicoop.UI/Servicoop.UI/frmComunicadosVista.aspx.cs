@@ -52,12 +52,7 @@ namespace Servicoop.UI
                     TituloComunicadosVista.InnerText = "LISTA DE CANDIDATOS A CUERPOS COLEGIADOS";
                     imgCandidatos.Style.Add("display", "block");
                     pnImgCandidatos.Style.Add("display","block");
-                    break;
-                case "8":
-                    TituloComunicadosVista.InnerText = "REGLAMENTO PROMOCION PAGO DE MARCHAMO 2026";
-                    imgExcedentes.Style.Add("display", "block");
-                    pnImgReglamentoCapitalice.Style.Add("display", "inblock");
-                    break;
+                    break;              
                 case "9":
                     TituloComunicadosVista.InnerText = "ESTATUTO SOCIAL 2025";
                     imgEstatutoSocial.Style.Add("display", "block");
